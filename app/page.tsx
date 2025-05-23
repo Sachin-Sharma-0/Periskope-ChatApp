@@ -35,7 +35,7 @@ export default function LoginPage() {
         </p><br />
         <p className="text-sm text-blue-800">
           <strong>Another Account:</strong><br />
-          Email: <span className="font-medium">roshnag.jio@gmail.com</span><br />
+          Email: <span className="font-medium">roshnag.jio@example.com</span><br />
           Password: <span className="font-medium">password123</span>
         </p>
       </div>
