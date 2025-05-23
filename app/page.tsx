@@ -26,6 +26,19 @@ export default function LoginPage() {
 
   return (
     <div className="flex h-screen bg-gray-100 items-center justify-center">
+      {/* Demo Credentials Box */}
+      <div className="absolute top-4 right-4 p-4 bg-blue-50 rounded-lg border border-blue-200 shadow-sm max-w-xs">
+        <p className="text-sm text-blue-800">
+          <strong>Demo Credentials:</strong><br />
+          Email: <span className="font-medium">demo@gmail.com</span><br />
+          Password: <span className="font-medium">password123</span>
+        </p><br />
+        <p className="text-sm text-blue-800">
+          <strong>Another Account:</strong><br />
+          Email: <span className="font-medium">roshnag.jio@gmail.com</span><br />
+          Password: <span className="font-medium">password123</span>
+        </p>
+      </div>
       <div className="bg-white p-8 rounded-lg shadow-lg w-96">
         <div className="flex justify-center mb-6">
           <div className="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center">
