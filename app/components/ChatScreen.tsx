@@ -239,31 +239,6 @@ export default function ChatScreen({ chatId }: { chatId: string }) {
         <div ref={messagesEndRef} />
       </div>
 
-      {/* <div className="flex justify-center my-2">
-        <button className="bg-gray-200 rounded-full p-2">
-          <FaAngleDown className="text-gray-600 text-lg" />
-        </button>
-      </div> */}
-      {/* Tags and Move to Bottom Button
-      <div className="flex items-center justify-between my-2 px-4">
-        <div className="flex items-center space-x-2">
-          <IoMdArrowDropdownCircle className="text-gray-600 text-lg" />
-          <div className="flex space-x-2">
-            <span className="flex items-center space-x-1 bg-green-200 text-green-700 text-xs rounded px-3 py-1">
-              <span>WhatsApp</span>
-              <HiInformationCircle className="text-green-700 text-sm" />
-            </span>
-            <span className="flex items-center space-x-1 bg-yellow-100 text-yellow-700 text-xs rounded px-3 py-1">
-              <span>Private Note</span>
-              <HiInformationCircle className="text-yellow-700 text-sm" />
-            </span>
-          </div>
-        </div>
-        <button className="bg-gray-200 rounded-full p-2">
-          <IoMdArrowDown className="text-gray-600 text-lg" />
-        </button>
-      </div> */}
-
         {/* Tags: Positioned directly above the message bar */}
       <div
         className=" absolute"
@@ -296,10 +271,6 @@ export default function ChatScreen({ chatId }: { chatId: string }) {
         <IoMdArrowDown className="text-gray-600 text-lg" />
       </button>
 
-      {/* <div className="flex justify-end px-4 space-x-2">
-        <span className="bg-gray-200 text-gray-600 text-xs rounded px-3 py-1">WhatsApp</span>
-        <span className="bg-gray-200 text-gray-600 text-xs rounded px-3 py-1">Private Note</span>
-      </div> */}
       <div className="bg-white border-t border-gray-200 p-2">
         <div className="flex items-center px-4">
           <input
@@ -308,7 +279,7 @@ export default function ChatScreen({ chatId }: { chatId: string }) {
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-            className="flex-1 p-2 bg-transparent focus:outline-none"
+            className="flex-1 p-2 text-gray-800 placeholder-gray-500 bg-transparent focus:outline-none"
           />
           <button onClick={handleSendMessage} className="bg-green-700 text-white rounded-full p-2">
             <IoMdSend className="text-white text-lg" />
